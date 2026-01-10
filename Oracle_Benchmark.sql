@@ -56,7 +56,7 @@ END;
 /
 
 -- 4. BENCHMARK SECTION
--- We use executing timestamps to measure precise latency
+-- We are useing executing timestamps to measure precise latency
 
 PROMPT '>>> TEST 1: UNOPTIMIZED SEARCH (FULL TABLE SCAN) <<<'
 SELECT count(*) FROM employees_benchmark WHERE dept_id = 25;

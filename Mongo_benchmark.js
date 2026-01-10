@@ -28,8 +28,7 @@ var result1 = db.employees.find({ "department": "Engineering" }).toArray();
 var end = new Date();
 print("Time taken: " + (end - start) + "ms");
 
-// 4. PERFORMANCE ANALYSIS (EXPLAIN PLAN)
-// This proves to the professor we checked the "winningPlan"
+
 var explain1 = db.employees.find({ "department": "Engineering" }).explain("executionStats");
 print("Docs Examined (Unoptimized): " + explain1.executionStats.totalDocsExamined);
 
